@@ -1,3 +1,4 @@
+import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
 
 import { useColorScheme } from 'react-native';
@@ -10,7 +11,9 @@ function App(): JSX.Element {
 
   return (
     <PaperProvider theme={theme}>
-      <Main />
+      <NavigationContainer>
+        <Main />
+      </NavigationContainer>
     </PaperProvider>
   );
 }
