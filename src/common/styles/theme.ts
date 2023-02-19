@@ -14,8 +14,8 @@ const DarkTheme = {
   },
 };
 
-const ThemeGenerator = (mode: 'Light' | 'Dark') => {
-  if (mode === 'Dark') {
+const ThemeGenerator = (mode: 'light' | 'dark') => {
+  if (mode === 'dark') {
     return DarkTheme;
   }
 
